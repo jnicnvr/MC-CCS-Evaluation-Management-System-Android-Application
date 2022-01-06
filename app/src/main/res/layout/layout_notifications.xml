@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/backgroundnga"
+        android:paddingVertical="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="91dp"
+                android:layout_height="94dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/allerta_stencil"
+                    android:gravity="start|top"
+                    android:text="IT 101"
+                    android:textAlignment="gravity"
+                    android:textColor="#333"
+                    android:typeface="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_faculty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/allerta_stencil"
+                    android:gravity="start|top"
+                    android:text="Alexy Gene Castillo"
+                    android:textAlignment="gravity"
+                    android:textColor="#333"
+                    android:typeface="monospace"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv_course"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/allerta_stencil"
+                    android:gravity="start|top"
+                    android:text="BSCS - 4B"
+                    android:textAlignment="gravity"
+                    android:textColor="#333"
+                    android:typeface="monospace"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="start|top"
+            android:text="Thursday November 12, 2021"
+            android:textAlignment="gravity"
+            android:textColor="#333"
+            android:typeface="monospace"
+            android:textSize="11sp"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

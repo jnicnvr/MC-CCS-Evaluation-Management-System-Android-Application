@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONDUCT EVALUATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MC- CCS ONLINE EVALUATION"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView57"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="7:51 AM"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView56"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView54" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="August 07, 2021"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView50"
+                app:layout_constraintTop_toBottomOf="@+id/imageView54" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView62"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+<!-- SUbject-->
+            <TextView
+                android:id="@+id/subText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="SUBJECT"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subImg" />
+
+            <ImageView
+                android:id="@+id/subImg"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_subject" />
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_round"
+                android:ems="10"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:text="IT101"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toTopOf="@+id/subImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+   <!-- end of SUbject-->
+            <EditText
+                android:id="@+id/et_facultynamef"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_round"
+                android:ems="10"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:text="EDWARD NEWGATE"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toTopOf="@+id/imageView60"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+            <EditText
+                android:id="@+id/et_deptf"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_round"
+                android:ems="10"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:text="COLLEGE OF ENGINEERING"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toTopOf="@+id/imageView61"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_facultynamef" />
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_deptf" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center|center_vertical"
+                android:text="NAME"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="@+id/et_facultynamef"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="start|center_vertical"
+                android:text="FACULTY INFORMATION"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView55" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="DEPARTMENT"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView61" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:text="MC - CCS EVALUATION FORM"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="  MANAGEMENT SKILLS"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/m_constrain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/round_bg1"
+                        android:text="NEXT"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView77"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.506"
+                        app:layout_constraintStart_toEndOf="@+id/textView77"
+                        app:layout_constraintTop_toTopOf="@+id/textView77"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView79"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView79"
+                        app:layout_constraintTop_toTopOf="@+id/textView79"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar3"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView81"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView81"
+                        app:layout_constraintTop_toTopOf="@+id/textView81"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar4"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView83"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView83"
+                        app:layout_constraintTop_toTopOf="@+id/textView83"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar5"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView85"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView85"
+                        app:layout_constraintTop_toTopOf="@+id/textView85"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar7"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView90"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView90"
+                        app:layout_constraintTop_toTopOf="@+id/textView90"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar6"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView87"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView87"
+                        app:layout_constraintTop_toTopOf="@+id/textView87"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar8"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView92"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView92"
+                        app:layout_constraintTop_toTopOf="@+id/textView92"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar9"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView95"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView95"
+                        app:layout_constraintTop_toTopOf="@+id/textView95"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar10"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView97"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView97"
+                        app:layout_constraintTop_toTopOf="@+id/textView97"
+                        app:layout_constraintVertical_bias="0.38" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Prepare for the days learning activity"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Start and ends classes promptly"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_2" />
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="administers test effectively and announces the result of the tests"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_3" />
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="provides stimulating atmosphere in the classrooms which encourages student to participate in class discussion"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+                    <TextView
+                        android:id="@+id/textView83"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_4" />
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Determines the psychological needs of the students and adapt appropriate teaching styles"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_5" />
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Provide student centered activities rather than teacher centered"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_6" />
+
+                    <TextView
+                        android:id="@+id/tv_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Maintains discipline in the class"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar6" />
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_7" />
+
+                    <TextView
+                        android:id="@+id/tv_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Make herself available for consultation"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar7" />
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_8" />
+
+                    <TextView
+                        android:id="@+id/tv_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Provides instructional materials relevant to the topics"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar8" />
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_9" />
+
+                    <TextView
+                        android:id="@+id/tv_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="3dp"
+                        android:paddingTop="2dp"
+                        android:text="Leaves the room in proper order."
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textColor="#424040"
+                        android:textSize="14sp"
+                        android:typeface="monospace"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar9" />
+
+                    <TextView
+                        android:id="@+id/textView97"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="RATE  : "
+                        app:layout_constraintEnd_toStartOf="@+id/ratingBar10"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_10" />
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="NOTHING FOLLOWS"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar10" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loadinggif"
+        android:layout_width="0dp"
+        android:layout_height="203dp"
+        android:src="@drawable/unaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MC - CCS <br /> Faculty Evaluation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="disclaimer">m
+        PLEASE READ!
+        \n
+        \n\n
+        Offline inspection is a preparation for the areas that are not covered by internet connection or mobile data. \n\n
+        All the inspection that you have done will not be directly available to the system. \n\n
+        All the data you have done while conducting inspection is saved locally in your android device.\n\n
+        Offline and online process are much likely the same but it have some minor adjustment for the offline process.\n\n
+        Please with us if this offline process will have a lot of errors or flaws.
+
+    </string>
+    <string name="mabini">
+
+        Mabini Colleges was founded in 1924 in Iriga,<br />Camarines Sur (now Iriga City) as Camarines Sur Institute by the late educator Miguel Rojo Ibana,<br />
+        a native of Talisay, Camarines Norte. With an initial enrolent of only 12 students,<br />
+        the founder and his students were aptly called “Mr. Ibana and his 12 disciples.”<br />
+        From its humble beginnings, the school grew despite difficulties encountered. Through sheer determination,<br />
+        perseverance and untold sacrifices, its triumph over the test and vicissitudes of time is considered a monumental<br />
+        contribution of Mabini Colleges to the cause of education in Camarines Norte.<br />
+
+        The Monroe Educational Survey Commission, which appraised the condition of private schools in 1928,<br />
+        found most private schools all over the Philippines to be hopelessly substandard.<br />
+        As a consequence, a vigorous purge of undesirable private schools was instituted which resulted in the closure of 38% of those schools.<br />
+        Surviving this purge were only two private schools in the Bicol Region and one of them was the Camarines Sur Institute.<br />
+        During the ensuing years, this school gained prestige as the biggest private school in the Region.<br />
+        It also changed its name to Apolinario Mabini Institute as a fitting recognition to the ideals and virtues exemplified by<br />
+        one of the greatest Filipino heroes and intellectuals admired by the founder.<br />
+
+        The Monroe Educational Survey Commission, which appraised the condition of private schools in 1928, <br />
+        found most private schools all over the Philippines to be hopelessly substandard. <br />
+        As a consequence, a vigorous purge of undesirable private schools was instituted which resulted in the closure of 38% of those schools.<br />
+        Surviving this purge were only two private schools in the Bicol Region and one of them was the Camarines Sur Institute.<br />
+        During the ensuing years, this school gained prestige as the biggest private school in the Region.<br />
+        It also changed its name to Apolinario Mabini Institute as a fitting recognition to the ideals and virtues exemplified by one of the greatest<br />
+        Filipino heroes and intellectuals admired by the founder.<br />
+
+        While this school in Iriga was at its zenith, World War II broke out and it did not spare the school from destruction.<br />
+        Its building was ruined, its books burned, its equipment and facilities were looted that at the end of the war, <br />
+        it had to start from scratch. Capitalization on its pre-war name, the school was preferred and patronized by students. <br />
+        The incidental increase in enrolment brought many problems to the school. <br />
+        But the founder in a brief period of two years was able to re-establish a higher standard of learning than many other private schools in the region. <br />
+        By 1948, it was the leading private school in the Bicol Region. <br />
+        The following year, despite the growing enrolment and prestige of the school in Iriga, <br />
+        the late founder and his inspiring and self-sacrificing wife, Mrs. Flora Avila-Ibana, decided to transfer the school to Daet,<br />
+        Camarines Norte in order to better serve their beloved province for the remaining years of their lives.<br />
+
+        The future of Mabini Colleges is bright. It had gained the confidence and patronage of the people of Camarines Norte and the nearby provinces .<br />
+        of Camarines Sur and Quezon.To date Mabini Colleges, in its own humble and sincere way, .<br />
+        has been able to provide an efficient and dedicated service to carry on its mission of giving a decent and comparativel.<br />
+        y high standard of instruction to the youth of Camarines Norte.<br />
+
+
+    </string>
+    >
+    <string name="mission">
+        Mabini Colleges shall provide quality instruction, research and  extension service program at all educational levels as its
+        monumental contribution to national growth and development.
+        <br />
+         <br />
+        Specifically it transforms students into: <br />
+        God-fearing,<br />
+        nation-loving,<br />
+        earth-caring, <br />
+        law-abiding,<br />
+        productive <br />
+        and globally competitive graduates.
+    </string>
+    <string name="description">
+        MC-CCS Faculty Evaluation is an android base application that will allow
+        the students of Mabini Colleges to properly evaluate them with the use of
+        their android device anywhere and anytime.
+
+                                                        --Development Team
+
+    </string>
+    <string name="m_1">Prepare for the days learning activity</string>>
+    <string name="m_2">Start and ends classes promptly</string>>
+    <string name="m_3">administers test effectively and announces the result of the tests</string>>
+    <string name="m_4">provides stimulating atmosphere in the classrooms which encourages student to participate in class discussion</string>
+    >
+    <string name="m_5">Determines the psychological needs of the students and adapt appropriate teaching styles</string>
+    >
+    <string name="m_6">Provide student centered activities rather than teacher centered</string>>
+    <string name="m_7">Maintains discipline in the class</string>>
+    <string name="m_8">Make herself available for consultation</string>>
+    <string name="m_9">Provides instructional materials relevant to the topics</string>>
+    <string name="m_10">Leaves the room in proper order.</string>>
+
+    <string name="ef_1">Discusses topics that are relevant to the subject</string>>
+    <string name="ef_2">Motivates students to ask questions</string>>
+    <string name="ef_3">Uses different teaching strategies to meet the learning needs of the students</string>
+    >
+    <string name="ef_4">Communicate effectively both in English and Filipino</string>>
+    <string name="ef_5">Shares knowledge on the current trends and issues pf the object</string>>
+    <string name="ef_6">Shows comprehensive and accurate knowledge of the subject matter</string>>
+    <string name="ef_7">Integrates the subject matter into real life situations</string>>
+    <string name="ef_8">Enriches class discussions with contemporary issues and events</string>>
+    <string name="ef_9">Provides varied learning experiences for intellectual development</string>>
+
+    <string name="et_1">Observes teachers code of ethic and the rules and regulations of the institution</string>
+    >
+    <string name="et_2">Sets example of moral and ethical behavior</string>>
+    <string name="et_3">Guides every student to develop his potentials and capability to the utmost</string>
+    >
+    <string name="et_4">Makes learning experiences of students enjoyable, fruitful and meaningful</string>
+    >
+    <string name="et_5">Computes objectively the grades of the students</string>>
+    <string name="et_6">interacts with students to create positive classroom climate.</string>>
+    <string name="et_7">considers views and opinion of students</string>>
+    <string name="et_8">Takes part in school related activities</string>>
+    <string name="et_9">Identifies and responds to the learning needs of the students.</string>>
+
+
+    <string name="instruction">
+    You are to rate the faculty member using a scale of 1 - 5, where 5 is the highest.
+    Please indicate the degree to which the following areas reflect his/her performance
+    in the current semester<br />
+
+        Rating: \n
+        1 - Unsatisfactory<br />
+        2 - Below Average<br />
+        3 - Average<br />
+        4 - Above Average<br />
+        5 - Outstanding<br />
+
+    </string>
+    <string name="title_activity_no_evaluation">NoEvaluationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>>
+
+
+    <!--MANAGEMENT SKILLS Questionnaire-->
+    <string name="m_q1">Prepares for the days learning activity.</string>
+    <string name="m_q2">Starts and ends classes promptly.</string>
+    <string name="m_q3">Administers tests effectively and announces the results of the tests.</string>
+    <string name="m_q4">Provides stimulating atmosphere in the classrooms which encourages students to participate in class discussions.</string>
+    <string name="m_q5">Determines the psychological needs of the students and adapt appropriate teaching styles.</string>
+    <string name="m_q6">Provides student centered activities rather than teacher centered.</string>
+    <string name="m_q7">Maintain discipline in the class.</string>
+    <string name="m_q8">Makes herself available for consultation.</string>
+    <string name="m_q9">Provides instructional materials relevant to topics.</string>
+    <string name="m_q10">Leaves the room in the proper order.</string>
+    <!--End of Management Skills Questionnaire-->
+
+    <!--FACULTY EFFECTIVENESS Questionnaire-->
+    Faculty Effectiveness
+    <string name="e_title">Faculty Effectiveness</string>
+    <string name="e_q1">Discuss topics that are relevant to the subject.</string>
+    <string name="e_q2">Motivates students to ask questions.</string>
+    <string name="e_q3">Uses different teaching strategies to meet the learning needs of the students.</string>
+    <string name="e_q4">Communicates effectively both in English and Filipino.</string>
+    <string name="e_q5">Shares knowledge on the current trends and issues of the subject.</string>
+    <string name="e_q6">Shows comprehensive and accurate knowledge of the subject matter.</string>
+    <string name="e_q7">Integrates the subject matter into real life situation.</string>
+    <string name="e_q8">Relates lessons to existing conditions and real life situations.</string>
+    <string name="e_q9">Enriches class discussions with contemporary issues and events.</string>
+    <string name="e_q10">Provides varied learning experiences for intellectual development.</string>
+    <!--End of FACULTY EFFECTIVENESS Questionnaire-->
+
+    <!--PROFESSIONAL ETHICS AND PERSONAL QUALITIES Questionnaire-->
+    <string name="pepq_title"> Professional Ethics and Personal Qualities</string>
+    <string name="pepq_q1">Observes teachers code of ethics and the rules and regulations of the institution.</string>
+    <string name="pepq_q2">Sets the example of moral and ethical behavior.</string>
+    <string name="pepq_q3">Guides every student to develop his potentials and capability to the utmost.</string>
+    <string name="pepq_q4">Makes learning experiences of students enjoyable, fruitful and meaningful.</string>
+    <string name="pepq_q5">Computes objectively the grades of the students.</string>
+    <string name="pepq_q6">Manifests interest in the progress of the student.</string>
+    <string name="pepq_q7">Interacts with students to create a positive classroom climate.</string>
+    <string name="pepq_q8">Considers views and opinions of students.</string>
+    <string name="pepq_q9">Takes part in school related activities.</string>
+    <string name="pepq_q10">Identifies and responds to the learning needs of the students.</string>
+    <!--End of PROFESSIONAL ETHICS AND PERSONAL QUALITIES Questionnaire-->
+
+    <string name="evaluation_instruction">You are to rate the faculty member using a scale of 1 - 5, where 5 is the highest.  Please indicate the degree to which the following areas reflect his/her performance  in the current semester.</string>
+
+    <string name="rating_guide"> Rating:  <br />
+        1 - Unsatisfactory  <br />
+        2 - Below Average  <br />
+        3 - Average  <br />
+        4 - Above Average  <br />
+        5 - Outstanding</string>
+
+    <string name="view_result_desc">Faculty evaluation is a process designed to improve faculty performance and assist in making personnel decisions. It is an important component of faculty development and personnel actions such as reappointment, grant of promotions, salary/rank. It is in the effective monitoring of performance that the faculty could be appraised as to them critical role as facilitators of learning. According to Grey (2011) implementation of effective faculty evaluation system CEL (Center for Educational Leadership)</string>
+
+    <string name="about_faculty_evaluation">\t  Faculty evaluation is a process designed to improve faculty performance and assist in making personnel decisions. It is an important component of faculty development and personnel actions such as reappointment, grant of promotions, salary/rank. It is in the effective monitoring of performance that the faculty could be appraised as to them critical role as facilitators of learning. According to Grey (2011) implementation of effective faculty evaluation system CEL (Center for Educational Leadership) nationally recognized faculty, staff and consultants have expertise that supports school, district and state in strengthening instructional leadership to improve student learning. We believe that evaluation helps the teachers to expertise their profession to engage students in high quality learning while simultaneously increasing the expertise of school teachers in the improvement process.</string>
+
+    <string-array name="class_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="section_arr">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="sex_arr">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+
+    <string name="lorem">\t Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qqq"
+    tools:context=".MCFE.MenuActivity">
+
+    <Button
+        android:id="@+id/btn_home"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_baseline_home_24"
+        android:paddingTop="10dp"
+        android:text="HOME"
+        app:layout_constraintEnd_toStartOf="@+id/btn_evaluation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_baseline_contact_support_24"
+        android:paddingTop="10dp"
+        android:text="CONTACT US!"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_baseline_help_24"
+        android:paddingTop="10dp"
+        android:text="ABOUT US"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_evaluation" />
+
+    <Button
+        android:id="@+id/btn_evaluation"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_baseline_rate_review_24"
+        android:paddingTop="10dp"
+        android:text="EVALUATION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="94dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mcfenga" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="MC - CCS FACULTY EVALUATION"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

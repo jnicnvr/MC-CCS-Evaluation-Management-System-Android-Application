@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME" />
+    <item
+        android:id="@+id/evaluation"
+        android:icon="@drawable/techer"
+        android:title="FACULTY" />
+    <item
+        android:id="@+id/nav_bug"
+        android:icon="@drawable/ic_baseline_rate_review_24"
+        android:title="EVALUATION" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="PROFILE" />
+</menu>
