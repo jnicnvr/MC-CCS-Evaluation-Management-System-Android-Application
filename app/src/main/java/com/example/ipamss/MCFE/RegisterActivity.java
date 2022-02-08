@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,14 +19,19 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ipamss.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.joda.time.Period;
 import org.joda.time.PeriodType;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -136,22 +142,23 @@ RegisterActivity extends AppCompatActivity {
 
                 if (username.isEmpty()) {
                     et_username.setError("Required Username");
-                }else if(password.isEmpty()){
-                    et_password.setError("Required Password");
-                }else if(SID.isEmpty()){
-                    et_SID.setError("Required Student ID");
-                }else if(Fname.isEmpty()){
-                    et_fname.setError("Required First Name");
-                }else if(Lname.isEmpty()){
-                    et_lname.setError("Required Last Name");
-                }else if(Age.isEmpty()){
-                    et_age.setError("Required Age");
-                }else if(Sex.isEmpty()){
-                   // ((TextView)et_sex.getSelectedView()).setError("Required Sex");
-                   // et_sex.setError("Required Sex");
-                }else if(Course.isEmpty()){
-                    et_course.setError("Required Course");
                 }
+//                else if(password.isEmpty()){
+//                    et_password.setError("Required Password");
+//                }else if(SID.isEmpty()){
+//                    et_SID.setError("Required Student ID");
+//                }else if(Fname.isEmpty()){
+//                    et_fname.setError("Required First Name");
+//                }else if(Lname.isEmpty()){
+//                    et_lname.setError("Required Last Name");
+//                }else if(Age.isEmpty()){
+//                    et_age.setError("Required Age");
+//                }else if(Sex.isEmpty()){
+//                   // ((TextView)et_sex.getSelectedView()).setError("Required Sex");
+//                   // et_sex.setError("Required Sex");
+//                }else if(Course.isEmpty()){
+//                    et_course.setError("Required Course");
+//                }
                 else
                     {
                     progressBar.setVisibility(View.VISIBLE);
@@ -160,6 +167,7 @@ RegisterActivity extends AppCompatActivity {
                         public void onResponse(String response) {
                             try {
                                 JSONObject jsonResponse = new JSONObject(response);
+                                Log.d("NICO",String.valueOf(jsonResponse));
                                 boolean success = jsonResponse.getBoolean("success");
                                 if (success) {
                                     final Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -184,15 +192,19 @@ RegisterActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
+
                     };
                     QueryRegister register = new QueryRegister(SID,Fname,Lname,Age,Sex,Course,username,password, year_level, section, responses);
                     RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                     queue.add(register);
+
                 }
             }
         });
 
     }
+
+
 
    /* public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {

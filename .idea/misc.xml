@@ -46,6 +46,7 @@
         <entry key="..\:/Users/Administrator/Desktop/cs/MC - CCS ANDROID APPLICATION RAW/IPAMSS/app/src/main/res/layout/seventh_fragment.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Administrator/Desktop/cs/MC - CCS ANDROID APPLICATION RAW/IPAMSS/app/src/main/res/layout/sixth_fragment.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Administrator/Desktop/cs/MC - CCS ANDROID APPLICATION RAW/IPAMSS/app/src/main/res/menu/bottom_navigation.xml" value="0.371875" />
+        <entry key="..\:/Users/Nico/Desktop/Project 2022/mcfe/MC-CCS-Evaluation-Management-System-Android-Application/app/src/main/res/layout/activity_about.xml" value="0.16875" />
         <entry key="..\:/Users/User/Desktop/Other Things/IPAMSS/app/src/main/res/layout/activity_choices.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/User/Desktop/Other Things/IPAMSS/app/src/main/res/layout/activity_choose.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/User/Desktop/Other Things/IPAMSS/app/src/main/res/layout/activity_second.xml" value="0.27447916666666666" />
@@ -80,7 +81,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
