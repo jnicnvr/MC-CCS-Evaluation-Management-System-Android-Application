@@ -62,7 +62,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView50"
+                android:id="@+id/timerText"
                 android:layout_width="wrap_content"
                 android:layout_height="34dp"
                 android:layout_marginStart="8dp"
@@ -70,7 +70,7 @@
                 android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:paddingStart="8dp"
-                android:text="7:51 AM"
+                android:text="00 : 00 : 00"
                 android:textSize="16sp"
                 android:typeface="monospace"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -92,7 +92,7 @@
                 android:typeface="monospace"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView50"
+                app:layout_constraintStart_toEndOf="@+id/timerText"
                 app:layout_constraintTop_toBottomOf="@+id/imageView54" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

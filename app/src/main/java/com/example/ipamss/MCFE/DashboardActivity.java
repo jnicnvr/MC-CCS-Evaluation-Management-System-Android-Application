@@ -48,7 +48,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         Intent get = getIntent();
         class_id = get.getStringExtra("class_id"); //null
-        sy_id = get.getStringExtra("sy_id"); //null
+        sy_id = get.getStringExtra("id"); //null
         id = get.getStringExtra("SID"); //null
         SID = get.getStringExtra("SID"); //null
         student_name = get.getStringExtra("student_name"); //null
@@ -130,7 +130,7 @@ public class DashboardActivity extends AppCompatActivity {
                         JSONObject jsonResponseSy = new JSONObject(response);
                         boolean success = jsonResponseSy.getBoolean("success");
                         if(success){
-                            String sy_id = jsonResponseSy.getString("sy_id");
+                            String sy_id = jsonResponseSy.getString("id");
                             editor_sy.putString("current_sy", sy_id);
                             editor_sy.apply();
                         }

@@ -100,4 +100,6 @@ public class ActivityBottomNav extends AppCompatActivity {
     public void changeMenu(int menuId){
         bottomNavigationView.setSelectedItemId(menuId);
     }
+
+
 }

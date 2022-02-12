@@ -172,7 +172,9 @@ public class LoginActivity extends AppCompatActivity {
                                                                             JSONObject jsonResponseSy = new JSONObject(response);
                                                                             boolean success = jsonResponseSy.getBoolean("success");
                                                                             if(success){
-                                                                                String sy_id = jsonResponseSy.getString("sy_id");
+//                                                                                String sy_id = jsonResponseSy.getString("sy_id");
+                                                                                String sy_id = jsonResponseSy.getString("id");
+
                                                                                 final Handler mHandler = new Handler();
                                                                                 //Toast.makeText(LoginActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
                                                                                 mHandler.postDelayed(new Runnable() {
@@ -182,7 +184,7 @@ public class LoginActivity extends AppCompatActivity {
                                                                                         intent.putExtra("sy_id", sy_id);
 
                                                                                        // editor_sy.putString("current_sy", sy_id);
-                                                                                       // editor_sy.apply();
+                                                                                        editor_sy.apply();
 
                                                                                         LoginActivity.this.startActivity(intent);
                                                                                     }
@@ -234,7 +236,8 @@ public class LoginActivity extends AppCompatActivity {
                                                         }
                                                     }
                                                 };
-                                                QuerySaveLogs logs = new QuerySaveLogs(student_name, responses);
+                                                String activity = "Login";
+                                                QuerySaveLogs logs = new QuerySaveLogs(student_name, activity, responses);
                                                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                                                 queue.add(logs);
 

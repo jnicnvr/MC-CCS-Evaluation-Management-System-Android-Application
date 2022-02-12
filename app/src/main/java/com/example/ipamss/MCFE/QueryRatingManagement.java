@@ -11,10 +11,12 @@ import static com.example.ipamss.MCFE.AAConstants.IPCONFIG;
 
 public class QueryRatingManagement extends StringRequest {
     //private static final String URL = "http://" + IPCONFIG + "/MCFE/ManagementEvaluation.php";
-    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/RatingManageEvaluation.php";
+//    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/RatingManageEvaluation.php";
+    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/REST/RatingManageEvaluation.php";
+
     private Map<String, String> params;
 
-    public QueryRatingManagement(String code, String description, String SID, String fid, String sy_id, String class_id, String subject_id, String rating1,String rating2,String rating3,String rating4,String rating5,String rating6,String rating7,String rating8,String rating9,String rating10, Response.Listener<String> listener) {
+    public QueryRatingManagement(String code, String description, String SID, String fid, String sy_id, String class_id, String subject_id, String rating1,String rating2,String rating3,String rating4,String rating5,String rating6,String rating7,String rating8,String rating9,String rating10,String end_at, Response.Listener<String> listener) {
 
         super(Method.POST,URL,listener,null);
         params = new HashMap<>();
@@ -36,6 +38,9 @@ public class QueryRatingManagement extends StringRequest {
         params.put("rating8",rating8);
         params.put("rating9",rating9);
         params.put("rating10",rating10);
+        params.put("end_at",end_at);
+
+
     }
 
     @Override

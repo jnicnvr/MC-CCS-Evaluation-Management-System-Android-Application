@@ -1,67 +1,54 @@
 package com.example.ipamss.MCFE;
 
-import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.MediaStore;
-import android.util.Base64;
+import android.os.Looper;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.viewpager.widget.ViewPager;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.example.ipamss.R;
-import com.google.android.material.snackbar.Snackbar;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
-
-import static android.app.Activity.RESULT_OK;
+import java.util.TimeZone;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class FourthFragment extends Fragment {
     TextView date;
-    TextView time;
+    TextView time2;
+
+
+    long startTime, timeInMilliseconds = 0;
+    Handler customHandler = new Handler();
 
     // Declare globally
     private int position = -1;
+
+
 
 ActivityBottomNav activityBottomNav;
 
@@ -117,13 +104,16 @@ ActivityBottomNav activityBottomNav;
 
         final ScrollView sv_evaluate = view2.findViewById(R.id.scrollView2);
         date = (TextView)view2.findViewById(R.id.textView56);
-        time = (TextView)view2.findViewById(R.id.textView50);
+        time2 = (TextView)view2.findViewById(R.id.timerText);
         SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd, yyyy");
         final String dt = sdf.format(new Date());
         date.setText(sdf.format(new Date()));
         SimpleDateFormat sdf1 = new SimpleDateFormat("K:mm a");
         String currentime = sdf1.format(new Date());
-        time.setText(currentime);
+
+        startTimer();
+
+//        time.setText(currentime);
 
         //ratingBar.setRating(0.0);
         ratingBar1 = view2.findViewById(R.id.ratingBar1);
@@ -318,19 +308,23 @@ ActivityBottomNav activityBottomNav;
                             String code = "MGMNT";
                             String description = "Management";
                         //   Log.e("my_asset fid",activityBottomNav.fid);
-
-                            QueryRatingManagement management = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10, res);
+                            String end_at = time2.getText().toString();
+                            QueryRatingManagement management = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10,end_at,res);
                             RequestQueue qq = Volley.newRequestQueue(getActivity());
                             qq.add(management);
                             Log.e("my_asset ra1",ra1);
                             Log.e("my_asset sy-id",activityBottomNav.sy_id);
                             Log.e("my_asset class_id",activityBottomNav.class_id);
                             Log.e("my_asset subject_id",activityBottomNav.subject_id);
-                           // onStop();
+                            Log.e("my_asset end_at",end_at);
 
+                            // onStop();
+                            stopTimer();
+                            startTimer();
                         }
 //Continue button
                         else if(btn_next.getText().toString().trim() == "CONTINUE"){
+
                             sv_evaluate.scrollTo(0,0);
                             Log.e("my_asset btn: ",btn_next.getText().toString().trim());
                             Response.Listener<String> res = new Response.Listener<String>() {
@@ -367,10 +361,14 @@ ActivityBottomNav activityBottomNav;
                             String code = "EFFECT";
                             String description = "Effectiveness";
                            // Log.e("my_asset fid",activityBottomNav.fid);
-                            QueryRatingManagement effect = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10, res);
+                            String end_at = time2.getText().toString();
+                            QueryRatingManagement effect = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10, end_at,res);
                             RequestQueue queue = Volley.newRequestQueue(getActivity());
                             queue.add(effect);
                             //onStop();
+
+                            stopTimer();
+                            startTimer();
                         }
 //Submit btn
                         else if(btn_next.getText().toString().trim() == "SUBMIT"){
@@ -420,9 +418,12 @@ ActivityBottomNav activityBottomNav;
                             };
                             String code = "PEPQ";
                             String description = "Professional Ethics and Personal Qualities";
-                            QueryRatingManagement effect = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10, res);
+                            String end_at = time2.getText().toString();
+                            QueryRatingManagement effect = new QueryRatingManagement(code,description,activityBottomNav.SID,activityBottomNav.fid,activityBottomNav.sy_id,activityBottomNav.class_id,activityBottomNav.subject_id,ra1,ra2,ra3,ra4,ra5,ra6,ra7,ra8,ra9,ra10, end_at, res);
                             RequestQueue q = Volley.newRequestQueue(getActivity());
                             q.add(effect);
+
+                            stopTimer();
                         }
                     }
                 }, 3000); // 4 seconds
@@ -465,5 +466,27 @@ ActivityBottomNav activityBottomNav;
             RequestQueue queued = Volley.newRequestQueue(getActivity());
             queued.add(evaluatedFaculty);
     }
+
+    public static String getDateFromMillis(long d) {
+        SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");
+        df.setTimeZone(TimeZone.getTimeZone("GMT"));
+        return df.format(d);
+    }
+    public void startTimer() {
+        startTime = SystemClock.uptimeMillis();
+        customHandler.postDelayed(updateTimerThread, 0);
+    }
+
+    public void stopTimer() {
+        customHandler.removeCallbacks(updateTimerThread);
+    }
+
+    private Runnable updateTimerThread = new Runnable() {
+        public void run() {
+            timeInMilliseconds = SystemClock.uptimeMillis() - startTime;
+            time2.setText(getDateFromMillis(timeInMilliseconds));
+            customHandler.postDelayed(this, 1000);
+        }
+    };
 
 }

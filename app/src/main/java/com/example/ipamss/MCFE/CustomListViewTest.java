@@ -75,7 +75,6 @@ public class CustomListViewTest<View> extends ArrayAdapter<String>  {
 //        Log.e("nico", String.valueOf(position));
         //new CustomListViewTest.GetImageFromURL(viewHolder.ivw).execute(code[position]);
 
-
         return r;
     }
     class ViewHolder{

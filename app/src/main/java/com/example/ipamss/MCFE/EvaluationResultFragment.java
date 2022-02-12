@@ -314,6 +314,7 @@ public class EvaluationResultFragment extends Fragment {
         onConvertToFloat(ratings3);
 
         final TextView tv_rating_sum = view.findViewById(R.id.tv_rating_sum);
+        tv_rating_sum.setVisibility(View.INVISIBLE);
         Log.e("Nico _overall_rating",String.valueOf(_overall_rating));
         String rate ="";
         compute_rating = (_overall_rating / 150) * 100;

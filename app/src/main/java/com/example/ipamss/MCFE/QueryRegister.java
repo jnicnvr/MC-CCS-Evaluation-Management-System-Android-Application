@@ -15,8 +15,8 @@ public class QueryRegister extends StringRequest {
     //private static final String Login_URL = "http://" + IPCONFIG + "/MCFE/StudentRegister.php";
 
 //    private static final String Login_URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/RegisterStudent.php";
-    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/RESTPostAPI.php";
-        private static final String REST_url = "http://45.76.152.7:8080/api/student/";
+    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/REST/StudentRegister.php";
+    private static final String REST_url = "http://45.76.152.7:8080/api/student/";
 
     private Map<String, String> params;
 

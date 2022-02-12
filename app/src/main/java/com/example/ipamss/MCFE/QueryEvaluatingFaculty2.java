@@ -11,7 +11,9 @@ import static com.example.ipamss.MCFE.AAConstants.IPCONFIG;
 
 public class QueryEvaluatingFaculty2 extends StringRequest {
 
-    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/FetchEvaluatingFaculty2.php";
+//    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/FetchEvaluatingFaculty2.php";
+    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/REST/FetchEvaluatingFaculty2.php";
+
     private Map<String, String> params;
 
     public QueryEvaluatingFaculty2(String SID, String sy_id, String class_id,Response.Listener<String> listener) {

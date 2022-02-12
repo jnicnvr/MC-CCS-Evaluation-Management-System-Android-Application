@@ -13,7 +13,9 @@ import static com.example.ipamss.MCFE.AAConstants.IPCONFIG;
 
 public class QueryRatingFetch extends StringRequest {
 
-    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/FetchFacultyRating.php";
+//    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/FetchFacultyRating.php";
+    private static final String URL = "http://" + IPCONFIG + "/MCFE/mc_evaluation/REST/FetchFacultyRating.php";
+
     private Map<String, String> params;
 
     public QueryRatingFetch(String SID, String fid, String sy_id, String class_id, String subject_id, String code, Response.Listener<String> listener) {

@@ -152,7 +152,7 @@ public class SubjectsFragment extends Fragment {
                                 subject[i] = jo.getString("subject");
                                 name[i] = jo.getString("name");
                                 department[i] = jo.getString("department");
-                                fid[i] = jo.getString("fid");
+                                fid[i] = jo.getString("TID");
                                 _class_id[i] = jo.getString("class_id");
                                 subject_id[i] = jo.getString("subject_id");
                                 //ok nalalamanan
